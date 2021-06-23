@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,7 @@
 		418EC1902675DF9A00FA4B4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		418EC1932675DF9A00FA4B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		418EC1952675DF9A00FA4B4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41A299662682CA0E009DF4A9 /* Subscribe.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subscribe.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		64269F808F9C4F067D87F065 /* Pods-RxSwift-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Demo.release.xcconfig"; path = "Target Support Files/Pods-RxSwift-Demo/Pods-RxSwift-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		F0934B6AEF0440245087B642 /* Pods_RxSwift_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,15 +64,40 @@
 		418EC1862675DF9100FA4B4C /* RxSwift-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				418EC1872675DF9100FA4B4C /* AppDelegate.swift */,
-				418EC1892675DF9100FA4B4C /* SceneDelegate.swift */,
-				418EC18B2675DF9100FA4B4C /* ViewController.swift */,
+				41A299692682D820009DF4A9 /* Playground */,
+				41A299672682D7E9009DF4A9 /* Application */,
+				41A299682682D815009DF4A9 /* Resource */,
 				418EC18D2675DF9100FA4B4C /* Main.storyboard */,
-				418EC1902675DF9A00FA4B4C /* Assets.xcassets */,
-				418EC1922675DF9A00FA4B4C /* LaunchScreen.storyboard */,
-				418EC1952675DF9A00FA4B4C /* Info.plist */,
+				418EC18B2675DF9100FA4B4C /* ViewController.swift */,
 			);
 			path = "RxSwift-Demo";
+			sourceTree = "<group>";
+		};
+		41A299672682D7E9009DF4A9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				418EC1872675DF9100FA4B4C /* AppDelegate.swift */,
+				418EC1892675DF9100FA4B4C /* SceneDelegate.swift */,
+				418EC1952675DF9A00FA4B4C /* Info.plist */,
+				418EC1922675DF9A00FA4B4C /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		41A299682682D815009DF4A9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				418EC1902675DF9A00FA4B4C /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		41A299692682D820009DF4A9 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				41A299662682CA0E009DF4A9 /* Subscribe.playground */,
+			);
+			path = Playground;
 			sourceTree = "<group>";
 		};
 		64A611412B7F2ED3D4371F66 /* Frameworks */ = {
@@ -88,7 +114,6 @@
 				2C627B637F84ACCC95D1A90C /* Pods-RxSwift-Demo.debug.xcconfig */,
 				64269F808F9C4F067D87F065 /* Pods-RxSwift-Demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -358,7 +383,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = "RxSwift-Demo/Info.plist";
+				INFOPLIST_FILE = "RxSwift-Demo/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +403,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = "RxSwift-Demo/Info.plist";
+				INFOPLIST_FILE = "RxSwift-Demo/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
