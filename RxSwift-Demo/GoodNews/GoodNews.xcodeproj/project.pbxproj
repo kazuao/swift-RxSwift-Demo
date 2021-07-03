@@ -69,13 +69,13 @@
 		41C9367C268AB16200527542 /* GoodNews */ = {
 			isa = PBXGroup;
 			children = (
+				5E8A56E4268FFBEC002D2695 /* Controllers */,
 				41C93699268D349900527542 /* Extensions */,
 				41C93696268D311200527542 /* Views */,
 				41C93693268C5CF300527542 /* Models */,
 				41C9367D268AB16200527542 /* AppDelegate.swift */,
 				41C9367F268AB16200527542 /* SceneDelegate.swift */,
 				41C93683268AB16200527542 /* Main.storyboard */,
-				41C93691268AB87F00527542 /* NewsTableViewController.swift */,
 				41C93686268AB16700527542 /* Assets.xcassets */,
 				41C93688268AB16700527542 /* LaunchScreen.storyboard */,
 				41C9368B268AB16700527542 /* Info.plist */,
@@ -113,6 +113,14 @@
 				4ABF0CD4B08818E18CA16D4F /* Pods_GoodNews.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E8A56E4268FFBEC002D2695 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				41C93691268AB87F00527542 /* NewsTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		CFFCCCF82B2E0E6DA26FA619 /* Pods */ = {
@@ -394,6 +402,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = GoodNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,6 +423,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = GoodNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
