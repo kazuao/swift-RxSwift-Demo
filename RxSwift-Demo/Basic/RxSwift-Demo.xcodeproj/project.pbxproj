@@ -35,12 +35,16 @@
 		41A2996B2682DDED009DF4A9 /* Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		41A2996C2682ED43009DF4A9 /* BehaviorSubject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BehaviorSubject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		41A2996D2682F6BE009DF4A9 /* ReplaySubject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ReplaySubject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		41C9366E268AA53A00527542 /* Map.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Map.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		41C9366F268AA5EF00527542 /* FlatMap.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FlatMap.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		41C93670268AA8F700527542 /* FlatMapLatest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FlatMapLatest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		41ED632526895B7D00D75D4A /* Skip.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Skip.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		41ED632626895D2D00D75D4A /* SkipWhile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SkipWhile.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		41ED63272689609B00D75D4A /* SkipUntil.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SkipUntil.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		41ED6328268963C900D75D4A /* Take.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Take.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		41ED63292689649A00D75D4A /* TakeWhile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TakeWhile.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		41ED632A2689830200D75D4A /* TakeUntil.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TakeUntil.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		41ED6353268A9E4D00D75D4A /* ToArray.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ToArray.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		64269F808F9C4F067D87F065 /* Pods-RxSwift-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Demo.release.xcconfig"; path = "Target Support Files/Pods-RxSwift-Demo/Pods-RxSwift-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		F0934B6AEF0440245087B642 /* Pods_RxSwift_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,7 +113,11 @@
 		41A299692682D820009DF4A9 /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				41C93670268AA8F700527542 /* FlatMapLatest.playground */,
+				41C9366E268AA53A00527542 /* Map.playground */,
+				41C9366F268AA5EF00527542 /* FlatMap.playground */,
 				41ED63292689649A00D75D4A /* TakeWhile.playground */,
+				41ED6353268A9E4D00D75D4A /* ToArray.playground */,
 				41ED632A2689830200D75D4A /* TakeUntil.playground */,
 				41ED632626895D2D00D75D4A /* SkipWhile.playground */,
 				41ED6328268963C900D75D4A /* Take.playground */,
