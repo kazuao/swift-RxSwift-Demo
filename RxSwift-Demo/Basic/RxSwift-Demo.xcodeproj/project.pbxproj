@@ -45,6 +45,13 @@
 		41ED63292689649A00D75D4A /* TakeWhile.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TakeWhile.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		41ED632A2689830200D75D4A /* TakeUntil.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TakeUntil.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		41ED6353268A9E4D00D75D4A /* ToArray.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ToArray.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5E615D342693D06C00A99CA8 /* StartWith.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StartWith.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5E615D382693D18D00A99CA8 /* Concat.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Concat.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5E615D3B2693D71400A99CA8 /* Merge.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Merge.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5E615D3E2693D94E00A99CA8 /* CombineLatest.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CombineLatest.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5E615D412693DBA300A99CA8 /* WithLatestFrom.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = WithLatestFrom.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5E615D442693DE6E00A99CA8 /* Reduce.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Reduce.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5E615D572693EF3000A99CA8 /* Scan.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Scan.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		64269F808F9C4F067D87F065 /* Pods-RxSwift-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Demo.release.xcconfig"; path = "Target Support Files/Pods-RxSwift-Demo/Pods-RxSwift-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		F0934B6AEF0440245087B642 /* Pods_RxSwift_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,6 +120,30 @@
 		41A299692682D820009DF4A9 /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				5E615D252693CFBC00A99CA8 /* Basics */,
+				5E615D2D2693CFE200A99CA8 /* Operator */,
+				5E615D312693CFFD00A99CA8 /* CombiningOperators */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
+		5E615D252693CFBC00A99CA8 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				413EB64526872005002DBCEB /* IgnoreElements.playground */,
+				41A2996C2682ED43009DF4A9 /* BehaviorSubject.playground */,
+				41A2996A2682D8CF009DF4A9 /* Dispose.playground */,
+				41A299662682CA0E009DF4A9 /* Subscribe.playground */,
+				41A2996B2682DDED009DF4A9 /* Subject.playground */,
+				41A2996D2682F6BE009DF4A9 /* ReplaySubject.playground */,
+				417D2CA32683035900100F9F /* BehaviorRelay.playground */,
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
+		5E615D2D2693CFE200A99CA8 /* Operator */ = {
+			isa = PBXGroup;
+			children = (
 				41C93670268AA8F700527542 /* FlatMapLatest.playground */,
 				41C9366E268AA53A00527542 /* Map.playground */,
 				41C9366F268AA5EF00527542 /* FlatMap.playground */,
@@ -125,15 +156,22 @@
 				413EB64626895298002DBCEB /* ElementAt.playground */,
 				41ED632526895B7D00D75D4A /* Skip.playground */,
 				413EB647268954B6002DBCEB /* Filter.playground */,
-				413EB64526872005002DBCEB /* IgnoreElements.playground */,
-				417D2CA32683035900100F9F /* BehaviorRelay.playground */,
-				41A2996D2682F6BE009DF4A9 /* ReplaySubject.playground */,
-				41A2996C2682ED43009DF4A9 /* BehaviorSubject.playground */,
-				41A2996A2682D8CF009DF4A9 /* Dispose.playground */,
-				41A2996B2682DDED009DF4A9 /* Subject.playground */,
-				41A299662682CA0E009DF4A9 /* Subscribe.playground */,
 			);
-			path = Playground;
+			path = Operator;
+			sourceTree = "<group>";
+		};
+		5E615D312693CFFD00A99CA8 /* CombiningOperators */ = {
+			isa = PBXGroup;
+			children = (
+				5E615D442693DE6E00A99CA8 /* Reduce.playground */,
+				5E615D572693EF3000A99CA8 /* Scan.playground */,
+				5E615D3E2693D94E00A99CA8 /* CombineLatest.playground */,
+				5E615D412693DBA300A99CA8 /* WithLatestFrom.playground */,
+				5E615D382693D18D00A99CA8 /* Concat.playground */,
+				5E615D3B2693D71400A99CA8 /* Merge.playground */,
+				5E615D342693D06C00A99CA8 /* StartWith.playground */,
+			);
+			path = CombiningOperators;
 			sourceTree = "<group>";
 		};
 		64A611412B7F2ED3D4371F66 /* Frameworks */ = {
