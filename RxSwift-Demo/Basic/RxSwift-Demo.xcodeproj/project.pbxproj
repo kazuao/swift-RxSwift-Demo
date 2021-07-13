@@ -52,6 +52,7 @@
 		5E615D412693DBA300A99CA8 /* WithLatestFrom.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = WithLatestFrom.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5E615D442693DE6E00A99CA8 /* Reduce.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Reduce.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5E615D572693EF3000A99CA8 /* Scan.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Scan.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5EB544552697BB3200C21460 /* MVC-MVVM.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "MVC-MVVM.md"; sourceTree = "<group>"; };
 		64269F808F9C4F067D87F065 /* Pods-RxSwift-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Demo.release.xcconfig"; path = "Target Support Files/Pods-RxSwift-Demo/Pods-RxSwift-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		F0934B6AEF0440245087B642 /* Pods_RxSwift_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,6 +90,7 @@
 		418EC1862675DF9100FA4B4C /* RxSwift-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				5EB544552697BB3200C21460 /* MVC-MVVM.md */,
 				41A299692682D820009DF4A9 /* Playground */,
 				41A299672682D7E9009DF4A9 /* Application */,
 				41A299682682D815009DF4A9 /* Resource */,
@@ -458,6 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = "RxSwift-Demo/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = "RxSwift-Demo/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

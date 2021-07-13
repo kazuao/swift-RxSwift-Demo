@@ -64,12 +64,6 @@ class ViewController: UIViewController {
         
         let resource = Resource<WeatherResult>(url: url)
         
-        let search = URLRequest.load(resource: resource)
-            .observe(on: MainScheduler.instance) // MainThreadで実行できるように
-            // Driverを使う場合は不要
-//            .catchAndReturn(WeatherResult.empty) // エラーになった場合
-            .asDriver(onErrorJustReturn: WeatherResult.empty)
-        
             // 通常の方法
 //            .subscribe(onNext: { [weak self] result in
 //
@@ -79,6 +73,23 @@ class ViewController: UIViewController {
 //                _self.displayWeather(weather)
 //            })
 //            .disposed(by: disposeBag)
+        
+        // throwエラーをハンドリングしない場合
+//        let search = URLRequest.load(resource: resource)
+//            .observe(on: MainScheduler.instance) // MainThreadで実行できるように
+//            // Driverを使う場合は不要
+////            .catchAndReturn(WeatherResult.empty) // エラーになった場合
+//            .asDriver(onErrorJustReturn: WeatherResult.empty)
+        
+        // throwエラーをcatchする場合
+        let search = URLRequest.load(resource: resource)
+            .observe(on: MainScheduler.instance)
+            .retry(3) // 再施行回数
+            .catch { error in
+                print(error.localizedDescription)
+                return Observable.just(WeatherResult.empty)
+            }
+            .asDriver(onErrorJustReturn: WeatherResult.empty)
         
         // bindを使ったパターン
         search.map { "\($0.main.temp) ℃" }
